@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ ! -f "/backup/config" ]
+then
+sudo borg init -e none /backup
+fi
 
 echo "Rentrez l'action souhaitée (list, save, backup ou delete) :"
 read action
