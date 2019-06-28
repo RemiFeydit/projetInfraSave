@@ -4,7 +4,7 @@ then
 sudo borg init -e none /backup
 fi
 
-echo "Rentrez l'action souhaitée (list, save, backup ou delete) :"
+echo "Rentrez l'action souhaitée (list, save, restore ou delete) :"
 read action
 
 if test $action = "list"
@@ -26,7 +26,7 @@ read nomDeLaSauvegarde
 sudo borg delete /backup::$nomDeLaSauvegarde
 sudo borg list /backup
 
-elif test $action = "backup"
+elif test $action = "restore"
 then
 echo "Entrez le nom de la sauvegarde à récupérer :"
 read nomDeLaSauvegarde
