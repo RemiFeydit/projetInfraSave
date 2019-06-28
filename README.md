@@ -86,3 +86,10 @@ Il ne vous reste plus qu'à donner les droit d'exécutions du script avec :
 sudo chmod +x backup.sh
 ```
 Pour effectuer vos sauvegardes ils ne vous reste plus qu'à exécuter le script !
+
+Lorsque vous lancerez le script, il faudra rentrer une action :
+
+`list`: Pour afficher la liste de toutes les sauvegardes existantes
+`save`: Pour faire une sauvegarde d'une dossier ou fichier spécifié
+`restore`: Pour restaurer une sauvegarde sur un fichier ou dossier spécifié
+`delete`: Pour supprimer une sauvegarde spécifié
